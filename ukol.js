@@ -1,4 +1,4 @@
-var input = " ";
+var input = "";
 if (typeof input !== "string") {
     console.log(input + ' is not a string');
 }
