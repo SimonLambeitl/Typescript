@@ -3,8 +3,8 @@ var input = " ";
 if(typeof input!=="string"){ 
       console.log(input+' is not a string') 
    } else  { 
-      var rem_diacritic = input.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-      var rem_alphanum = rem_diacritic.replace(/[^0-9a-z]/gi,'') //removes all non-alphanumeric characters from input
+      var rem_diacritic = input.normalize("NFD").replace(/[\u0300-\u036f]/g, "") //removes diacritic from the input
+      var rem_alphanum = rem_diacritic.replace(/[^0-9a-z]/gi,'') //removes all non-alphanumeric characters from the input
 var lower = rem_alphanum.toLowerCase();  // converts the string to lower case
 //console.log(lower)
 
